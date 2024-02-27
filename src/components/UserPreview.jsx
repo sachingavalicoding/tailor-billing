@@ -13,8 +13,8 @@ const UserPreview = () => {
   }
 
   return (
-    <div className="container mx-auto my-8 p-4 bg-white rounded shadow-md">
-      <h2 className="text-3xl font-semibold mb-4">User Preview</h2>
+    <div className="container mx-auto mt-28 p-4 bg-white rounded shadow-md">
+      <h2 className="text-3xl font-semibold mb-4">Customer Details </h2>
       <div className="overflow-x-auto">
         <table className="min-w-full border bg-white">
           <tbody>
@@ -43,27 +43,21 @@ const UserPreview = () => {
               <td className="border px-4 py-2">{user.endDate}</td>
             </tr>
             <tr>
-              <td className="border px-4 py-2 font-semibold">Product Quantity</td>
-              <td className="border px-4 py-2">{user.productQuantity}</td>
+              <td className="border px-4 py-2 font-semibold">Quantity Shirt </td>
+              <td className="border px-4 py-2">{user.productQuantityShirt}</td>
             </tr>
             <tr>
-              <td className="border px-4 py-2 font-semibold">Neck</td>
-              <td className="border px-4 py-2">{user.neck}</td>
+              <td className="border px-4 py-2 font-semibold"> Quantity Pant</td>
+              <td className="border px-4 py-2">{user.productQuantityPant}</td>
             </tr>
+          
             <tr>
-              <td className="border px-4 py-2 font-semibold">Chest</td>
-              <td className="border px-4 py-2">{user.chest}</td>
-            </tr>
-            <tr>
-              <td className="border px-4 py-2 font-semibold">Hand</td>
+              <td className="border px-4 py-2 font-semibold">Shirt </td>
               <td className="border px-4 py-2">{user.hand}</td>
             </tr>
+         
             <tr>
-              <td className="border px-4 py-2 font-semibold">Shoulder</td>
-              <td className="border px-4 py-2">{user.sholder}</td>
-            </tr>
-            <tr>
-              <td className="border px-4 py-2 font-semibold">Foot</td>
+              <td className="border px-4 py-2 font-semibold">Pant</td>
               <td className="border px-4 py-2">{user.foot}</td>
             </tr>
           </tbody>

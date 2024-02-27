@@ -16,8 +16,8 @@ const UserList = () => {
   };
 
   return (
-    <div className="container mx-auto my-8 p-4">
-      <h2 className="text-2xl font-semibold mb-4">Users List</h2>
+    <div className="container mx-auto mt-28 p-4">
+      <h2 className="text-2xl font-semibold mb-4">Customers List</h2>
 
       {/* Search Bar */}
       <input

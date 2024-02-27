@@ -12,12 +12,10 @@ const CreateForm = () => {
         phoneno2: '',
         address: '',
         startDate: '',
-        productQuantity: '',
+        productQuantityShirt: '',
+        productQuantityPant: '',
         endDate: '',
-        neck: '',
-        chest: '',
         hand: '',
-        sholder: '',
         foot: '',
     });
 
@@ -41,7 +39,7 @@ const CreateForm = () => {
 
 
     return (
-        <div className="container mx-auto mt-8 p-4 sm:p-8">
+        <div className="container mx-auto mt-32 p-4 sm:p-8">
             <h1 className="text-3xl font-semibold mb-4">User Details Form</h1>
            <Link to="/">  <h2 className='flex items-center gap-3 mb-5 '>   <IoArrowBackCircle className='text-xl' />Back TO  Home </h2>   </Link>
             <form onSubmit={handleSubmit} className="max-w-md mx-auto">
@@ -53,7 +51,7 @@ const CreateForm = () => {
                     </div>
                     <div>
                         <label htmlFor="phoneno" className="block text-sm font-medium text-gray-600">Phone Number:</label>
-                        <input type="tel" id="phoneno" name="phoneno" onChange={handleChange} value={formData.phoneno} required className="mt-1 p-2 border w-full" />
+                        <input type="tel" id="phoneno" name="phoneno" onChange={handleChange} value={formData.phoneno} className="mt-1 p-2 border w-full" />
                     </div>
                 </div>
 
@@ -65,7 +63,7 @@ const CreateForm = () => {
                     </div>
                     <div>
                         <label htmlFor="address" className="block text-sm font-medium text-gray-600">Address:</label>
-                        <input type="text" id="address" name="address" onChange={handleChange} value={formData.address} required className="mt-1 p-2 border w-full" />
+                        <input type="text" id="address" name="address" onChange={handleChange} value={formData.address} className="mt-1 p-2 border w-full" />
                     </div>
                 </div>
 
@@ -73,40 +71,34 @@ const CreateForm = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                     <div>
                         <label htmlFor="startDate" className="block text-sm font-medium text-gray-600">Start Date:</label>
-                        <input type="date" id="startDate" name="startDate" onChange={handleChange} value={formData.startDate} required className="mt-1 p-2 border w-full" />
+                        <input type="date" id="startDate" name="startDate" onChange={handleChange} value={formData.startDate}  className="mt-1 p-2 border w-full" />
                     </div>
                     <div>
                         <label htmlFor="endDate" className="block text-sm font-medium text-gray-600">End Date:</label>
-                        <input type="date" id="endDate" name="endDate" onChange={handleChange} value={formData.endDate} required className="mt-1 p-2 border w-full" />
+                        <input type="date" id="endDate" name="endDate" onChange={handleChange} value={formData.endDate} className="mt-1 p-2 border w-full" />
                     </div>
                     <div>
-                        <label htmlFor="productQuantity" className="block text-sm font-medium text-gray-600">Product Quantity:</label>
-                        <input type="text" id="productQuantity" name="productQuantity" onChange={handleChange} value={formData.productQuantity} required className="mt-1 p-2 border w-full" />
+                        <label htmlFor="productQuantityShirt" className="block text-sm font-medium text-gray-600"> Quantity-Shirt </label>
+                        <input type="text" id="productQuantityShirt" name="productQuantityShirt" onChange={handleChange} value={formData.productQuantityShirt}  className="mt-1 p-2 border w-full" />
+                    </div>
+                    <div>
+                        <label htmlFor="productQuantityPant" className="block text-sm font-medium text-gray-600"> Quantity-Pant </label>
+                        <input type="text" name="productQuantityPant" onChange={handleChange} value={formData.productQuantityPant}  className="mt-1 p-2 border w-full" />
                     </div>
 
                 </div>
 
                 {/* Body Measurements */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+         
                     <div>
-                        <label htmlFor="neck" className="block text-sm font-medium text-gray-600">Neck:</label>
-                        <input type="text" id="neck" name="neck" onChange={handleChange} value={formData.neck} required className="mt-1 p-2 border w-full" />
+                        <label htmlFor="hand" className="block text-sm font-medium text-gray-600">Shirt </label>
+                        <input type="text" id="hand" name="hand" onChange={handleChange} value={formData.hand} className="mt-1 p-2 border w-full" />
                     </div>
+                
                     <div>
-                        <label htmlFor="chest" className="block text-sm font-medium text-gray-600">Chest:</label>
-                        <input type="text" id="chest" name="chest" onChange={handleChange} value={formData.chest} required className="mt-1 p-2 border w-full" />
-                    </div>
-                    <div>
-                        <label htmlFor="hand" className="block text-sm font-medium text-gray-600">Hand:</label>
-                        <input type="text" id="hand" name="hand" onChange={handleChange} value={formData.hand} required className="mt-1 p-2 border w-full" />
-                    </div>
-                    <div>
-                        <label htmlFor="sholder" className="block text-sm font-medium text-gray-600">Shoulder:</label>
-                        <input type="text" id="sholder" name="sholder" onChange={handleChange} value={formData.sholder} required className="mt-1 p-2 border w-full" />
-                    </div>
-                    <div>
-                        <label htmlFor="foot" className="block text-sm font-medium text-gray-600">Foot:</label>
-                        <input type="text" id="foot" name="foot" onChange={handleChange} value={formData.foot} required className="mt-1 p-2 border w-full" />
+                        <label htmlFor="foot" className="block text-sm font-medium text-gray-600">Pant </label>
+                        <input type="text" id="foot" name="foot" onChange={handleChange} value={formData.foot} className="mt-1 p-2 border w-full" />
                     </div>
                 </div>
 
